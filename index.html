@@ -14,9 +14,9 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <!--link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"-->
+    <!--link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"-->
+    <!--link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'-->
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
@@ -36,10 +36,16 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">More About Me</a>
+              <a class="nav-link js-scroll-trigger" href="#Projects">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#Research">Research</a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#more">More About Me</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -71,7 +77,7 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>About Me</h2>
-            <p>A Junior in Computer Science in Purdue University, USA. A person who loves to learn new things no matter what the subject is. I never trust a theory before analyzing and applying it in real life (if applicable). I believe in hard work, perfection and I strive hard to achieve them even if the work is easy. A swimmer, tennis player, and a vivid reader. If I were to be asked to describe myself in one word, it would be VERSATILE.</p>
+            <p>A Senior in Computer Science in Purdue University, USA. A person who loves to learn new things no matter what the subject is. I never trust a theory before analyzing and applying it in real life (if applicable). I believe in hard work, perfection and I strive hard to achieve them even if the work is easy. A swimmer, tennis player, and a vivid reader. If I were to be asked to describe myself in one word, it would be VERSATILE.</p>
             <p>My motto is "Never stop improving and learning." With this, I plunged into the waters of Computer science. To learn and create new things.</p>
             <p>
               <li class="list-inline-item">
@@ -92,46 +98,177 @@
       </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download-section content-section text-center">
+    <!-- Projects Section -->
+    <section id="Projects" class="project-section content-section text-center">
+          <div>
+            <div class="col-lg-8 mx-auto">
+              <h1>Projects</h1>
+              <div align="left">
+                <p><h4>Course projects</h4>
+                  <ul>
+                    <li>
+                      Name	: Fiesta
+                      <br>
+                      Description:
+                      Fiesta is a web app. Organizing a party is not a simple task and takes a lot of planning. Everyone the host invites would inevitably bring gifts to the party, 
+                      but the host will have to give away the gift if it is a duplicate or it is something they don’t want to use. As a solution to this problem and to streamline 
+                      the party hosting process, Fiesta would make the process of planning a party easier. With features like creating a guest list, sending invites, 
+                      finding a place to host the party, catering services depending on the type of party it is and the host’s budget, Fiesta aims to make your celebration unique. 
+                      Fiesta allows the host to make an Amazon Wishlist and share it with everyone invited. Invited guests can decide what to gift from the wish list, 
+                      they can RSVP through the web app and get directions to the party location. Hence Fiesta is a one-stop party app.
+                    </li>
+                    <li>
+                      Name	: Carnet
+                      <br>
+                      Description:
+                      Carnet is a web app. Carnet makes it easy to create notes and organize them into notebooks. Notes can also be sorted with custom tags, 
+                      which is a great way to pull up all your "study notes" or "recipes" with a couple of clicks of the mouse. We have been studying and 
+                      applying the best user experience in our work.
+                    </li>
+                    <li>
+                      Name	: Food search
+                      <br>
+                      Description:
+                      It is a website which allows the user to search for new recipes for cooking, along with that it allows the user to enter the items 
+                      and the server will provide a list of recipes which can be made with those recipes. It allows the user to calculate the amount of 30 different types of 
+                      nutrition. This would allow the user to try new and healthier food items. If the user does not have the ingredients. then the user has the option to 
+                      have them added to a day They can view the aggregate amounts of consumptions of different ingredients and some suggestions related to their diets. 
+                      The list of recipes will be self-updating allowing the user to view new and upcoming recipes
+                      Technologies used for this project: - Bootstrap, HTML, CSS, Vue’s and other visual libraries for designing the web UI. JavaScript, jQuery and other 
+                      APIs for the implementation of client and server-based codes. +Node for server deployment on Heroku app and GitHub for hosting the site.
+                    </li>
+                    <li>
+                      Name	: Foil maker
+                      <br>
+                      Description:
+                      Foil maker is a game played between 2 or more people. The game flows as a question is given to all the players and each of them suggest a 
+                      possible answer (but not the correct one). The computer shuffles all the answers and adds them along with the correct answer to the list of choices. 
+                      This list is presented to all the players and their options are taken. The result is calculated upon the number of players one is successful in 
+                      fooling and for getting the correct answer.
+                      Server - it is the main controller which controls the flow of game. it implements threads and hence a new object is created for each new player. 
+                      The input method does the main task of reading computing and presenting the result. All the player's ids are stored in two array lists for ensuring concurrency.
+                      Client - it is the part of code which every player has while playing. It follows MVC format in which every java code has its own model, view and controller. 
+                      Model is implemented by the method call; view is defined in the constructor and the controller is given to call1 method.
+                    </li>
+                    <li>
+                      Name	: Shell project
+                      <br>
+                      Description:
+                      Made for CS 252 systems programing. It allows the fuse with the following features in this shell, Process Creation, Command Execution, 
+                      File Redirection, Pipes, Background, Ignore Ctrl-C, Wild Card Expansion, Elimination of Zombie Processes, Allow quotes and escape characters, 
+                      environment variable expansion, Tilde expansion, Line editor, History, Subshells, Cd, setenv, unsetenv, printenv, exit and clear. 
+                    </li>
+                  </ul>                  
+                <br><h4>Personal projects</h4> 
+                <ul>
+                  <li>
+                    Name	: Timber
+                    <br>
+                    Description:
+                    Timber is an android music playing app which allows music from the device’s native library, streaming music from SoundCloud, 
+                    YouTube and Last FM. The app uses voice to text api to search for music and create playlists. It also uses Microsoft’s face api 
+                    to create playlists according to the mood. The app is highly customizable as it allows changing of background color, text color, etc. 
+                    It also allows listing the local radio stations.
+                  </li>
+                  <li>
+                    Name	: We care for you
+                    <br>
+                    Description:
+                    An android app which keeps all your medical records and insurance handy and safe. The app prevents filling up of long forms. 
+                    It uses Microsoft Face Api to digitally transfer your information and act as a security lock by allowing the access to the user 
+                    who has set up the app on the current device. Real time updating prevents going to the hospital for report collection and provides 
+                    information of doctors near you with contact details and navigation to reach there. Even if the electronic device is compromised the 
+                    data will remain safe in the server.
+                  </li>
+                  <li>
+                    Name	: Sripath-Mishra
+                    <br>
+                    Description:
+                    This is Personal website for me. It uses HTML, CSS, and JavaScript.
+                  </li>
+                  <li>
+                    Name	: My anime
+                    <br>
+                    Description:
+                    My anime is an android app which allows the user to view details about animated tv shows.
+                  </li>
+                </ul> 
+              </p></div>
+               </div>
+          </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="Research" class="project-section content-section text-center">
+        <div>
+          <div class="col-lg-8 mx-auto">
+            <h1>Research</h1>
+            <div align="left">
+              <p><h4>Details:</h4>
+                The current project is centralizing and allowing access to a database containing camera feeds around the globe. 
+                My team has completed working on an REST API to allow access to the Database. In addition to that we have created a 
+                client in python which allows successful interaction with the API. We created scripts to check the health and accuracy 
+                of the camera feed.  After this we shifted our focus towards experiments to create a generalized solution to classify 
+                if a web page contains camera data and if it does, we will extract the information of the camera and add to it out 
+                database. On the side we are working towards an image database which will allow the user to search for camera feed 
+                for objects in near real time.
+                My area of Contribution will be in ensuring that the CameraDatabaseAPI and the Camera Database Client are up to date 
+                and fast and efficient. My team and I would be constantly being working on these two child projects to keep them spick 
+                and span. Along with this, my team and I would be working on the health checking scripts. We will be using different 
+                techniques to determine the location of the camera, framerate of the camera along with resolution width and height. 
+                But, most importantly we will determine if images are retrievable from the camera feeds. We will also be marking the 
+                unhealthy cameras so that API users do not get bad data. We will try to automate the process of fixing unhealthy cameras.
+                We will also generate two solutions which can be used to classify a webpage, extract camera information and allow the user 
+                to search for camera feed for objects in near real time.
+              </p></div>
+             </div>
+        </div>
+  </section>
+
+    <!-- more Section -->
+    <section id="more" class="download-section content-section text-center">
       <div>
         <div class="col-lg-8 mx-auto">
           <h1>More About Me</h1>
-          <p>I am currently a peer to peer mentor for students from the cs department. For information regarding my involvements in Purdue please refer to my
           <a href="Sripath_Mishra_Resume.pdf" target="_blank">Resume</a> or contact me.</p>
           <div align="left">
             <p><h4>ACADEMICS</h4>
-            <br>+ Best sophomore award in Cs department at Purdue University 2018.
-            <br>+ Trophy for achieving highest marks in Computer Science in twelfth Board 2016.
-            <br>+ First prize in “Interhouse Science Model Competition” 2015.
-            <br>+ First prize in “School Math Quiz” 2015.
-            <br>+ Trophy in “Interschool Cyberbuzz Coding Competition” 2014.
-            <br>+ Trophy for achieving highest marks in Computer Application in Tenth Board 2014.
-            <br>+ Trophy in "School Mathematics Competition”2014.
-            <br>+ First prize in “School Science Model Making Competition” 2014.
-            <br>+ Gold at the “School Java Coding Competition” 2013.<br>
+              <ul>
+                <li> Best sophomore award in Cs department at Purdue University 2018.</li>
+                <li> Trophy for achieving highest marks in Computer Science in twelfth Board 2016.</li>
+                <li> First prize in “Interhouse Science Model Competition” 2015.</li>
+                <li> First prize in “School Math Quiz” 2015.</li>
+                <li> Trophy in “Interschool Cyberbuzz Coding Competition” 2014.</li>
+                <li> Trophy for achieving highest marks in Computer Application in Tenth Board 2014.</li>
+                <li> Trophy in "School Mathematics Competition”2014.</li>
+                <li> First prize in “School Science Model Making Competition” 2014.</li>
+                <li> Gold at the “School Java Coding Competition” 2013.</li>
+              </ul>
             <br><h4>SPORTS</h4> 
-            <br>+ Silver medal in 10x4 relay running in “School Athletics Meet” 2014.
-            <br>+ Gold in 50 m butterfly stroke swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.
-            <br>+ Gold in 50m freestyle swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.
-            <br>+ Gold in 50 m backstroke swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.
-            <br>+ Silver in 200 m backstroke swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.
-            <br>+ Bronze in 800 meters free style swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.
-            <br>+ Runner up trophy at the “Gurgaon Valley School Tennis Tournament” U-14 boys 2013.
-            <br>+ Runner up trophy at the “Ryder’s Sports Academy Tennis Competition” U-12 boys 2013.
-            <br>+ Bronze medal at the “School Level Athletics Meet”, running (200 meters) 2012.
-            <br>+ Silver medal at the “School Level Athletics Meet”, running (200 meters relay) 2012.
-            <br>+ Medal at the “School Tennis” U-12 boys 2012.
-            <br>+ Medal at the “School Tennis” U-14 boys 2012.
-            <br>+ Medal at the “School Tennis” U-16 boys 2012.
-            <br>+ Medal and a trophy (runners up) at the “School Tennis” U-12 boy’s double 2012.
-            <br>+ Bronze medal at the “School Athletics Meet” in 100 meters Sprint 2011.
-            <br>+ Bronze medal at the “School Athletics Meet” in 200 meters Sprint 2011.
-            <br>+ Bronze medal at the “District Level” for backstroke swimming (100m) 2011.
-            <br>+ Bronze medal at the “School Athletics Meet” in 200 meters relay 2011.
-            <br>+ Runner up trophy at the “Fire Tennis Academy Tennis Competition” U-12 boys 2011.
-            <br>+ Captained the athletics team in “Pathways World School Interschool Athletic Meet” 2011.
-            <br>+ Runner up trophy at the “Fire Tennis Academy Tennis Competition” U-14 boys 2010.</p></div>
+              <ul>
+                <li> Silver medal in 10x4 relay running in “School Athletics Meet” 2014.</li>
+                <li> Gold in 50 m butterfly stroke swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.</li>
+                <li> Gold in 50m freestyle swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.</li>
+                <li> Gold in 50 m backstroke swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.</li>
+                <li> Silver in 200 m backstroke swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.</li>
+                <li> Bronze in 800 meters free style swimming in “Quadro Mania Swim Meet” (Interschool Competition) 2014.</li>
+                <li> Runner up trophy at the “Gurgaon Valley School Tennis Tournament” U-14 boys 2013.</li>
+                <li> Runner up trophy at the “Ryder’s Sports Academy Tennis Competition” U-12 boys 2013.</li>
+                <li> Bronze medal at the “School Level Athletics Meet”, running (200 meters) 2012.</li>
+                <li> Silver medal at the “School Level Athletics Meet”, running (200 meters relay) 2012.</li>
+                <li> Medal at the “School Tennis” U-12 boys 2012.</li>
+                <li> Medal at the “School Tennis” U-14 boys 2012.</li>
+                <li> Medal at the “School Tennis” U-16 boys 2012.</li>
+                <li> Medal and a trophy (runners up) at the “School Tennis” U-12 boy’s double 2012.</li>
+                <li> Bronze medal at the “School Athletics Meet” in 100 meters Sprint 2011.</li>
+                <li> Bronze medal at the “School Athletics Meet” in 200 meters Sprint 2011.</li>
+                <li> Bronze medal at the “District Level” for backstroke swimming (100m) 2011.</li>
+                <li> Bronze medal at the “School Athletics Meet” in 200 meters relay 2011.</li>
+                <li> Runner up trophy at the “Fire Tennis Academy Tennis Competition” U-12 boys 2011.</li>
+                <li> Captained the athletics team in “Pathways World School Interschool Athletic Meet” 2011.</li>
+                <li> Runner up trophy at the “Fire Tennis Academy Tennis Competition” U-14 boys 2010.</li>
+            </ul>
+          </p></div>
            </div>
       </div>
     </section>
@@ -142,16 +279,16 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact</h2>
-            <p>Please feel free to contact me via email - Mishra60@purdue.edu</p>
+            <p>Please feel free to contact me</p>
             <ul class="list-inline banner-social-buttons">
               <li class="list-inline-item">
-                <a href="https://www.facebook.com/sripath.mishra" target="_blank" class="btn btn-default btn-lg">
+                <a href="mailto:sripathm2@gmail.com" target="_blank" class="btn btn-default btn-lg">
                   <i></i>
-                  <span class="network-name">Facebook</span>
+                  <span class="network-name">Email</span>
                 </a>
               </li>
               <li class="list-inline-item">
-                <a href="https://www.linkedin.com/in/sripath-mishra-7ab225141/" target="_blank" class="btn btn-default btn-lg">
+                <a href="https://www.linkedin.com/in/sripath-mishra/" target="_blank" class="btn btn-default btn-lg">
                   <i></i>
                   <span class="network-name">LinkedIn</span>
                 </a>
@@ -166,7 +303,7 @@
     <!-- Footer -->
     <footer>
       <div class="container text-center">
-        <p>Copyright &copy; Sripath Mishra 2017</p>
+        <p>Copyright &copy; Sripath Mishra 2019</p>
       </div>
     </footer>
 
